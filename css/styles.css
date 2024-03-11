@@ -42,7 +42,7 @@ body {
 		position: absolute;
 		top: 100%;
 		left: 0;
-		background-color: #ffffffd6;
+		background-color: #ffffffeb;
 		backdrop-filter: blur(2px);
 		display: flex;
 		flex-direction: column;
@@ -127,7 +127,7 @@ body {
 	align-items: flex-end;
 	padding: 0 var(--pad-side);
 	box-sizing: border-box;
-	background-color: #ffffffd6;
+	background-color: #ffffffeb;
 	backdrop-filter: blur(2px);
 	border-bottom: 1px solid #cbcbcb;
 }
