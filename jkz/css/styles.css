@@ -160,7 +160,8 @@ body {
 		  rgba(232,145,2,0) 80%);
 }
 .jkz h1 {
-	font-size: clamp(1.0625rem, 0.8409rem + 1.1818vw, 1.875rem);
+	font-size: clamp(1.4375rem, 1.0469rem + 1.25vw, 1.75rem);
+	text-align: center;
 	font-weight: 500;
 	margin-bottom: 15px;
 }
