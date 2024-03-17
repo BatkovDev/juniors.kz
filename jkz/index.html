@@ -1,4 +1,4 @@
-a<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
@@ -23,7 +23,7 @@ a<!DOCTYPE html>
 		</ul>
 	</header>
 
-	<section class="jkz" id="home">
+	<section class="jkz s-col" id="home">
 		<h1>Juniors.kz это твой успешный старт в IT.</h1>
 		<p>Обучись на востребованную профессию и начни карьеру в IT, пока спрос на IT специалистов в разы выше предложения</p>
 		<a href="#courses" class="jkz--button">Начать обучение</a>
@@ -33,24 +33,104 @@ a<!DOCTYPE html>
 		<h2>Курс</h2>
 		<div class="course">
 			<div class="about">
-				<img class="logo" src="./img/python-png.png" alt="Python-разработчик">
-				<h3>Python-разработчик</h3>
+				<h3>Основы системного администрирования для новичков</h3>
 				<p class="descr">Lorem ipsum dolor, sit amet consectetur adipisicing, elit. Vero amet delectus obcaecati reprehenderit asperiores laboriosam dolores, sapiente nostrum quidem laborum autem, unde accusantium, beatae, fugit commodi excepturi illum? Aspernatur neque pariatur reprehenderit dicta voluptatibus vel, consequuntur quia quos ducimus molestiae, asperiores non omnis necessitatibus et dolorum consectetur totam? Maiores, accusamus.</p>
 
-				<ul class="detail">
-					<li class="sessions">
-						<h4>Занятия</h4>
-						<p>2 раза в неделю</p>
-					</li>
-					<li class="price">
-						<h4>Стоимость</h4>
-						<p>10000000$</p>
-					</li>
-					<li class="duration">
-						<h4>Длительность</h4>
-						<p>6 месяцев</p>
-					</li>
-				</ul>
+				<div class="details">
+					<ul id="first-detail">
+						<li class="sessions">
+							<h4>Занятия</h4>
+							<p>2 раза в неделю</p>
+						</li>
+						<li class="price">
+							<h4>Стоимость</h4>
+							<p>10000000$</p>
+						</li>
+						<li class="duration">
+							<h4>Длительность</h4>
+							<p>6 месяцев</p>
+						</li>
+					</ul>
+					<div class="accordion">
+						<h4 class="title">Учебный план курса</h4>
+						<ul>
+							<li class="item">
+								<button class="ac-btn">Блок 1. Кто такой системный администратор? <i class="bi bi-record-circle-fill"></i></button>
+								<div class="modules">
+									Модуль 1. Введение.Знакомство со специальностью. Основные моменты. Навыки. Пересечение с другими специализациями.
+									<br>
+									Модуль 2. Help-desk.  О морали системного администратора.
+								</div>
+							</li>
+							<li class="item">
+								<button class="ac-btn">Блок 2. Компьютер как отдельный элемент сети. Также оргтехника. <i class="bi bi-record-circle-fill"></i></button>
+								<div class="modules">
+									Модуль 1. Установка Windows. Основные понятия и распространенные ошибки. Diskpart.
+									<br>
+									Модуль 2. Разбор ПК и ноутбука, периферия и комплектующие.
+									<br>
+									Модуль 3. Полезные программы для мастера по ремонту компьютерной техники (WinPE, Aida 64, VictoriaHDD, Acronis и т.д.).
+									<br>
+									Модуль 4. Командная строка, полезные утилиты. Реестр. Локальные политики.
+								</div>
+							</li>
+							<li class="item">
+								<button class="ac-btn">Блок 3. Локальная сеть. Основы сетевой инженерии. <i class="bi bi-record-circle-fill"></i></button>
+								<div class="modules">
+									Модуль 1. Практическое введение в монтаж ЛВС. Витая пара. Категории СКС. PoE. Оптоволокно.
+									<br>
+									Модуль 2. IP, MAC адреса, маска подсети, шлюз, DNS.
+									<br>
+									Модуль 3. Устройства построения сети (маршрутизатор, коммутатор, модем, концентратор, в чем разница?)
+									<br>
+									Модуль 4. Топология сети. Уровни сети. Проводная и беспроводная сеть.
+									<br>
+									Модуль 5. Построение подсетей на основе маски. Введение в VLAN.
+									<br>
+									Модуль 6. Модель OSI. Модель стека протоколов TCP/IP. Немного о протоколах сети.
+								</div>
+							</li>
+							<li class="item">
+								<button class="ac-btn">Блок 4. Инструменты администрирования IT инфраструктуры компании. <i class="bi bi-record-circle-fill"></i></button>
+								<div class="modules">
+									Модуль 1. Домен сети. Лес и дерево. ActiveDirectory. DNS. DHCP. Групповые политики. Пользователи и группы.
+									<br>
+									Модуль 2. Терминальные сервера. Доступ к удаленному рабочему столу. RDP, SSH.
+									<br>
+									Модуль 3. Хранение данных. Общие документы. Методы реализации.
+									<br>
+									Модуль 4. Управление сетью компании. Сканеры сети. Введение таблиц (список пользователей, логин-пароли и т.д.).
+									<br>
+									Модуль 5. Office 365. Возможности(SharePoint, OneDriveи т.д.). Exchange почтовый сервер.
+								</div>
+							</li>
+							<li class="item">
+								<button class="ac-btn">Блок 5. Знакомства со серверами. Виртуализация. Классификация. СХД. RAID. <i class="bi bi-record-circle-fill"></i></button>
+								<div class="modules">
+									Модуль 1. Что такое сервер. Виртуализация. Контейнеризация. Виртуальные сервера.
+									<br>
+									Модуль 2. Классификация серверов по разным критериям.
+									<br>
+									Модуль 3. СХД. Назначение. Виды. 
+									<br>
+									Модуль 4. Группа жестких дисков. Интерфейсы жестких дисков. RAID массивы, их виды.
+								</div>
+							</li>
+							<li class="item">
+								<button class="ac-btn">Блок 6. Дополнительные навыки. <i class="bi bi-record-circle-fill"></i></button>
+								<div class="modules">
+									Модуль 1. Администрирование 1С. Помощь бухгалтерии. Интернет-банкинг. СОНО. КГД. ЭСФ.
+									<br>
+									Модуль 2. Администрирование MSSQLserver, PostgreSQL.
+									<br>
+									Модуль 3. Информ безопастность. Корпоративные антивирусы. Эксплойты. Системы защиты сети. Файрволлы.
+									<br>
+									Модуль 4. VPN. Туннелирование.
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
 			</div>
 			<div class="mentor">
 				<img src="./img/image-01.jpg" alt="Your mentor">
@@ -58,6 +138,16 @@ a<!DOCTYPE html>
 				<p class="excerpt">Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Minus, ducimus perspiciatis eius.</p>
 				<a href="#" class="jkz--button">Оставить заявку</a>
 			</div>
+		</div>
+
+		<div class="skills">
+			<h3>Навыки</h3>
+			<ul>
+				<li><span class="check"><i class="bi bi-check"></i></span> <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, pariatur.</span></li>
+				<li><span class="check"><i class="bi bi-check"></i></span> <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, pariatur.</span></li>
+				<li><span class="check"><i class="bi bi-check"></i></span> <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, pariatur.</span></li>
+				<li><span class="check"><i class="bi bi-check"></i></span> <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, pariatur.</span></li>
+			</ul>
 		</div>
 	</section>
 
