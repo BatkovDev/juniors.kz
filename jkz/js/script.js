@@ -36,3 +36,13 @@ $(window).on('scroll', function() {
         }
     });
 });
+
+const accordion = document.querySelectorAll(".accordion .item .ac-btn");
+for (var i = 0; i < accordion.length; i++) {
+  accordion[i].addEventListener("click", function() {
+    for (var others = 0; others < accordion.length; others++) {
+        accordion[others].parentElement.classList.remove("active");
+    }
+    this.parentElement.classList.toggle("active");
+  });
+}
