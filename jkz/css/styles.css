@@ -335,7 +335,7 @@ body {
 	border-radius: 50%;
 }
 .course .mentor h3 {
-	font-size: 28px;
+	font-size: clamp(1.4375rem, 1.0469rem + 1.25vw, 1.75rem);
 }
 
 .courses .skills {
