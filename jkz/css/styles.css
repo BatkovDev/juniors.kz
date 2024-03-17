@@ -416,7 +416,7 @@ body {
 	border-radius: 50%;
 }
 .about .person-list .person h3 {
-	font-size: clamp(0.9375rem, 0.8523rem + 0.4545vw, 1.25rem);
+	font-size: clamp(1.4375rem, 1.0469rem + 1.25vw, 1.75rem);
 }
 
 
