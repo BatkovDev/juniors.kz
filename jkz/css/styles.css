@@ -330,11 +330,10 @@ body {
 .course .mentor img {
 	object-fit: cover;
 	max-height: 200px;
-	max-width: 200px;
 	height: 100%;
 	width: 100%;
 	aspect-ratio: 1;
-	border-radius: 50%;
+	border-radius: 15px;
 }
 .course .mentor h3 {
 	font-size: clamp(1.4375rem, 1.0469rem + 1.25vw, 1.75rem);
