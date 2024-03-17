@@ -238,7 +238,9 @@ body {
 }
 
 
-.course .about .details {
+.course .details {
+	max-width: clamp(18.75rem, 15.0463rem + 18.5185vw, 31.25rem);
+	width: 100%;
 	margin-top: 20px;
 	padding: 18px 0;
 	background-color: #fff;
@@ -247,38 +249,38 @@ body {
 	border-left: 1px solid #97cf9a;
 	border-radius: 12px;
 }
-.course .about .details #first-detail {
+.course .details #first-detail {
 	display: flex;
 	justify-content: space-evenly;
 }
-.course .about .details #first-detail li {
+.course .details #first-detail li {
 	text-align: center;
 }
-.course .about .details #first-detail li h4 {
+.course .details #first-detail li h4 {
 	color: #025302;
 	font-size: clamp(0.9375rem, 0.8523rem + 0.4545vw, 1.25rem);
 }
-.course .about .details #first-detail li p {
+.course .details #first-detail li p {
 	color: #575757;
 	font-size: clamp(0.875rem, 0.8068rem + 0.3636vw, 1.125rem);
 }
 
-.course .about .details .accordion {
+.course .details .accordion {
 	margin-top: 20px;
 }
-.course .about .details .accordion .title {
+.course .details .accordion .title {
 	font-size: clamp(0.9375rem, 0.8523rem + 0.4545vw, 1.25rem);
 	text-align: center;
 	margin-bottom: 10px;
 }
 
-.course .about .details .accordion .item {
+.course .details .accordion .item {
 	border-top: 1px solid #e5e5e5;
 }
-.course .about .details .accordion .item:last-child {
+.course .details .accordion .item:last-child {
 	border-bottom: 1px solid #e5e5e5;
 }
-.course .about .details .accordion .item .ac-btn {
+.course .details .accordion .item .ac-btn {
 	color: #444;
 	font-weight: 600;
 	cursor: pointer;
@@ -292,34 +294,32 @@ body {
 	outline: none;
 	transition: .2s;
 }
-.course .about .details .accordion .item .ac-btn i {
+.course .details .accordion .item .ac-btn i {
 	color: var(--clr-lt-green);
 }
-.course .about .details .accordion .item.active .ac-btn i::before {
+.course .details .accordion .item.active .ac-btn i::before {
 	content: "\f287";
 }
 
-.course .about .details .accordion .item .ac-btn:hover,
-.course .about .details .accordion .item.active .ac-btn {
+.course .details .accordion .item .ac-btn:hover,
+.course .details .accordion .item.active .ac-btn {
 	background-color: #f4f4f4;
 }
 
-.course .about .details .accordion .item .modules {
+.course .details .accordion .item .modules {
 	display: none;
 	padding: 8px 20px;
 	background-color: #fff;
 	overflow: hidden;
 	line-height: 1.7;
 }
-.course .about .details .accordion .item.active .modules {
+.course .details .accordion .item.active .modules {
 	display: block;
 	font-size: clamp(0.875rem, 0.6406rem + 0.75vw, 1.0625rem);
 }
 
 
-.course .fb {
-	max-width: clamp(18.75rem, 15.0463rem + 18.5185vw, 31.25rem);
-	width: 100%;
+.course .about .fb {
 	padding: 10px 0;
 	display: flex;
 	flex-direction: column;
@@ -327,7 +327,7 @@ body {
 	text-align: center;
 	gap: 12px;
 }
-.course .fb img {
+.course .about .fb img {
 	object-fit: cover;
 	max-height: 200px;
 	height: 100%;
@@ -335,7 +335,7 @@ body {
 	aspect-ratio: 1;
 	border-radius: 15px;
 }
-.course .fb h3 {
+.course .about .fb h3 {
 	font-size: clamp(1.4375rem, 1.0469rem + 1.25vw, 1.75rem);
 }
 
