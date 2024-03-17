@@ -148,7 +148,8 @@ body {
 
 #home {
 	width: 100%;
-	padding: 75px 0;
+	box-sizing: border-box;
+    	padding: 75px var(--pad-side);
 }
 .jkz {
 	display: flex;
