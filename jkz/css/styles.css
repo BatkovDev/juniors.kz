@@ -279,7 +279,7 @@ body {
 .course .details .accordion .item {
 	border-top: 1px solid #e5e5e5;
 	border-left: 2px solid transparent;
-	transition: .1s;
+	transition: .3s;
 }
 .course .details .accordion .item.active {
 	border-left-color: var(--clr-lt-green);
