@@ -295,6 +295,7 @@ body {
 	text-align: left;
 	display: flex;
 	justify-content: space-between;
+	font-size: 14px;
 	background-color: #f8f8f8;
 	width: 100%;
 	border: none;
