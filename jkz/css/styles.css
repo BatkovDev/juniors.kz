@@ -282,7 +282,7 @@ body {
 	transition: .1s;
 }
 .course .details .accordion .item.active {
-	border-color: var(--clr-lt-green);
+	border-left-color: var(--clr-lt-green);
 }
 .course .details .accordion .item:last-child {
 	border-bottom: 1px solid #e5e5e5;
