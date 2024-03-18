@@ -330,7 +330,7 @@ body {
 }
 .course .content .fb img {
 	object-fit: cover;
-	max-height: 200px;
+	max-height: 300px;
 	height: 100%;
 	width: 100%;
 	aspect-ratio: 1;
