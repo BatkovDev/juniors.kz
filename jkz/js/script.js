@@ -27,10 +27,9 @@ $(window).on('scroll', function() {
 
         if (scrollTop >= sectionTop && scrollTop <= sectionBottom) {
             var link = $('.header__links .link a[href="#' + hash + '"]');
-            if (link.length) { // Проверяем, существует ли ссылка с таким же id
+            if (link.length) {
                 $(".header__links .link a").removeClass('active');
                 link.addClass('active');
-            } else {
             }
             return false;
         }
@@ -40,9 +39,15 @@ $(window).on('scroll', function() {
 const accordion = document.querySelectorAll(".accordion .item .ac-btn");
 for (var i = 0; i < accordion.length; i++) {
   accordion[i].addEventListener("click", function() {
-    for (var others = 0; others < accordion.length; others++) {
-        accordion[others].parentElement.classList.remove("active");
+    if(!this.parentElement.classList.contains("active")){
+        for (var others = 0; others < accordion.length; others++) {
+            accordion[others].parentElement.classList.remove("active");
+        }
+        this.parentElement.classList.toggle("active");
+    }else{
+        for (var others = 0; others < accordion.length; others++) {
+            accordion[others].parentElement.classList.remove("active");
+        }
     }
-    this.parentElement.classList.toggle("active");
   });
 }
