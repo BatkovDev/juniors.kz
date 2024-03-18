@@ -278,6 +278,11 @@ body {
 
 .course .details .accordion .item {
 	border-top: 1px solid #e5e5e5;
+	border-left: 2px solid transparent;
+	transition: .1s;
+}
+.course .details .accordion .item.active {
+	border-color: var(--clr-lt-green);
 }
 .course .details .accordion .item:last-child {
 	border-bottom: 1px solid #e5e5e5;
