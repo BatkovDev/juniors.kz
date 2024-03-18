@@ -33,13 +33,6 @@ body {
 	color: var(--clr-lt-black);
 }
 
-@media screen and (max-width: 450px) {
-	#courses .course .about .details #first-detail {
-		flex-direction: column;
-		gap: 15px;
-	}
-}
-
 @media screen and (max-width: 768px) {
 	#header.open {
 		border-bottom: unset !important;
@@ -71,7 +64,7 @@ body {
 	}
 
 
-	.courses .course {
+	.courses .course .content {
 		flex-direction: column-reverse;
 		align-items: center;
 	}
@@ -83,6 +76,13 @@ body {
 
 	#contacts {
 		flex-direction: column;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	#courses .course .details #first-detail {
+		flex-direction: column;
+		gap: 15px;
 	}
 }
 
