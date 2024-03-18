@@ -147,7 +147,7 @@ body {
 	background-color: #ababab4a;
 }
 .header__links .link a.active {
-	border-color: var(--clr-lt-green);
+	border-color: #2d4162;
 }
 
 #home {
