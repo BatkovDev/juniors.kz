@@ -239,9 +239,8 @@ body {
 
 
 .course .details {
-	margin: 0 auto;
 	margin-top: 20px;
-	padding: 18px var(--pad-side);
+	padding: 18px calc(var(--pad-side) * 2);
 	background-color: #fff;
 	box-shadow: #d9d9d9 1px 2px 4px;
 	border-top: 1px solid #97cf9a;
@@ -341,9 +340,8 @@ body {
 }
 
 .course .skills {
-	margin: 0 auto;
 	margin-top: 20px;
-	padding: 18px var(--pad-side);
+	padding: 18px calc(var(--pad-side) * 2));
 	box-sizing: border-box;
 	background-color: #fff;
 	box-shadow: #d9d9d9 1px 2px 4px;
@@ -352,7 +350,7 @@ body {
 	border-radius: 12px;
 }
 .course .skills h3 {
-	font-size: clamp(0.9375rem, 0.8523rem + 0.4545vw, 1.25rem);
+	font-size: clamp(1.0625rem, 0.8409rem + 1.1818vw, 1.875rem);
 	margin-bottom: 15px;
 }
 .course .skills li .check {
@@ -368,7 +366,7 @@ body {
 }
 .course .skills li {
 	margin: 4px 0;
-	font-size: 17px;
+	font-size: clamp(0.9375rem, 0.8523rem + 0.4545vw, 1.25rem);
 }
 
 #about {
