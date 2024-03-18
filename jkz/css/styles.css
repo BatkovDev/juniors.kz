@@ -341,7 +341,7 @@ body {
 
 .course .skills {
 	margin-top: 20px;
-	padding: 18px calc(var(--pad-side) * 2));
+	padding: 18px calc(var(--pad-side) * 2);
 	box-sizing: border-box;
 	background-color: #fff;
 	box-shadow: #d9d9d9 1px 2px 4px;
