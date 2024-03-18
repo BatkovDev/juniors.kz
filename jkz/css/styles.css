@@ -352,6 +352,12 @@ body {
 .course .skills h3 {
 	font-size: clamp(1.0625rem, 0.8409rem + 1.1818vw, 1.875rem);
 	margin-bottom: 15px;
+	text-align: center;
+}
+.course .skills ul {
+	    display: flex;
+	    flex-direction: column;
+	    align-items: center;
 }
 .course .skills li .check {
 	background-color: var(--clr-lt-green);
