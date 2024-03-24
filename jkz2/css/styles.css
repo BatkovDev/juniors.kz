@@ -160,8 +160,9 @@ body {
 #home {
 	width: 100%;
 	box-sizing: border-box;
-    	padding: 75px var(--pad-side);
+	padding: 75px var(--pad-side);
 }
+
 .jkz {
 	display: flex;
     align-items: center;
@@ -176,13 +177,49 @@ body {
 	text-align: center;
 	font-weight: 500;
 	margin-bottom: 15px;
+	position: relative;
+}
+.jkz h1::after {
+	content: '';
+	display: inline-block;
+	position: static;
+	width: 25px;
+	height: 2px;
+	margin-left: 8px;
+	vertical-align: middle;
+	background-color: #a8518a;
 }
 .jkz p {
 	max-width: 600px;
 	text-align: center;
 	font-size: clamp(0.9375rem, 0.8182rem + 0.6364vw, 1.375rem);
 }
-
+.jkz .applies {
+	display: flex;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+	max-width: 600px;
+	margin-top: 15px;
+	text-align: center;
+	flex-direction: column;
+}
+.jkz .applies .dedicated {
+	font-weight: 600;
+	font-size: clamp(0.9375rem, 0.8523rem + 0.4545vw, 1.25rem);
+	color: #9c27b0;
+ }
+.jkz .applies ul {
+	margin: 4px 3px;
+	background: #f2eef5;
+	padding: 8px 24px;
+	font-size: clamp(0.9375rem, 0.8523rem + 0.4545vw, 1.25rem);
+	box-sizing: border-box;
+	border-radius: 15px 8px 15px 8px;
+	line-height: 1.7;
+ }
+.jkz .applies ul li {
+	color: #313131;
+}
 
 .jkz--button {
 	border: 2px solid #a8518a;
@@ -441,6 +478,58 @@ body {
 .course .skills li {
 	margin: 4px 0;
 	font-size: clamp(0.9375rem, 0.8523rem + 0.4545vw, 1.25rem);
+}
+
+.course .selection {
+	background-color: #fff;
+	position: relative;
+	border-radius: 25px 25px 15px 15px;
+	margin-top: 20px;
+	margin-bottom: 1.9rem;
+	box-sizing: border-box;
+	padding: 15px calc(var(--pad-side) * 2) clamp(2.0625rem, 0.5rem + 5vw, 3.3125rem) calc(var(--pad-side) * 2);
+	border-top: 1px solid #97cf9a;
+	border-left: 1px solid #97cf9a;
+	box-shadow: #d9d9d8 1px 2px 4px;
+}
+.course .selection::after {
+	content: '';
+	position: absolute;
+	bottom: clamp(-1.5375rem, -0.15625rem + -2.5vw, -0.9625rem);
+	left: 33.3%;
+	transform: translateX(-33.3%);
+	background-color: #f4f5f6;
+	height: clamp(1.875rem, 0.3125rem + 5vw, 3.125rem);
+	width: clamp(1.875rem, 0.3125rem + 5vw, 3.125rem);
+	border-radius: 50%;
+	box-shadow: #d9d9d8 0 4px 1px inset;
+}
+.course .selection::before {
+	content: '';
+	position: absolute;
+	bottom: clamp(-1.5375rem, -0.15625rem + -2.5vw, -0.9625rem);
+	left: 66.6%;
+	transform: translateX(-66.6%);
+	background-color: #f4f5f6;
+	height: clamp(1.875rem, 0.3125rem + 5vw, 3.125rem);
+	width: clamp(1.875rem, 0.3125rem + 5vw, 3.125rem);
+	border-radius: 50%;
+	box-shadow: #d9d9d8 0 4px 1px inset;
+}
+.course .selection h3 {
+	position: relative;
+	text-align: center;
+	padding: 0 0 15px 0;
+	margin-bottom: 15px;
+	border-bottom: 1px solid #f4f5f6;
+	font-size: clamp(1.0625rem, 0.8409rem + 1.1818vw, 1.875rem);
+}
+.course .selection ol li {
+	margin: 3px 0;
+	font-size: clamp(0.9375rem, 0.8523rem + 0.4545vw, 1.25rem);
+}
+.course .selection ol li b {
+	color: #924476;
 }
 
 #about {
